@@ -172,6 +172,58 @@
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/13tqrCMbQlk" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
+
+  <section class="container">
+    <h2>Contato</h2>
+    <h4>Entre em contato conosco</h4>
+    <form>
+      <div class="form-group">
+        <label for="contato-nome">Nome:</label>
+        <input type="email" class="form-control" id="contato-nome" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label for="contato-email">E-mail:</label>
+        <div class="input-group">
+          <div class="input-group-addon">@</div>
+          <input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+        </div>
+      </div>
+      <div class="grupo-radio">
+          <div class="radio">
+              <label>
+                  <input type="radio" name="tipo-pessoa" value="fisica" checked>
+                  Pessoa física
+              </label>
+          </div>
+
+          <div class="radio">
+              <label>
+                  <input type="radio" name="tipo-pessoa" value="juridica">
+                  Pessoa jurídica
+              </label>
+          </div>
+      </div><!--
+
+      --><select class="contato-select form-control" name="tipo-solicitacao">
+          <option value="" disabled selected>Tipo de solicitação</option>
+          <option value="casa">Casa</option>
+          <option value="mansao">Mansão</option>
+          <option value="castelo">Castelo</option>
+      </select>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <address>
+        <strong>TopCasaFina Arquitetura</strong><br>
+        Rua Vergueiro, 3185, Vila Mariana<br>
+        São Paulo, SP<br>
+        Tel: (11) 5571-2751 ou 5083-3884<br>
+    </address>
+    <address>
+      <a href="mailto:#">Email: contato.topcasafina@alura.com.br</a>
+    </address>
+  </footer>
 </body>
 
 </html>
