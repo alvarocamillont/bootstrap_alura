@@ -12,10 +12,32 @@
 </head>
 
 <body>
-  <section class="container">
-
+  <head>
+    <nav class="navbar navbar-default ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav" >
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#projetos">Nossos Projetos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <section id="sobre-nos" class="container">
     <h2>Sobre Nós</h2>
-
     <img class="img-responsive" src="img/empresa.jpg">
 
     <div class="panel-group paineis-sobre" id="accordion" role="tablist" aria-multiselectable="true">
@@ -76,7 +98,7 @@
     </div>
   </div>
 
-  <section class="container">
+  <section class="container" id="projetos">
     <h2>Nossos Projetos</h2>
     <figure class="thumbnail">
       <img class="img-fluid" src="img/projetos/residencia-ludi.png" alt="Card image cap">
@@ -119,8 +141,8 @@
     </figure>
   </section>
 
-  <section class="container depoimentos-titulo">
-    <h2>Nossos Projetos</h2>
+  <section class="container depoimentos-titulo" id="depoimentos">
+    <h2>Depoimentos</h2>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -166,14 +188,14 @@
     </div>
   </section>
 
-  <div class="container">
+  <div class="container" id="video">
     <h2>Vídeo Institucional</h2>
     <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/13tqrCMbQlk" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
-  <section class="container">
+  <section class="container" id="contato">
     <h2>Contato</h2>
     <h4>Entre em contato conosco</h4>
     <form>
@@ -189,20 +211,21 @@
         </div>
       </div>
       <div class="grupo-radio">
-          <div class="radio">
-              <label>
+        <div class="radio">
+          <label>
                   <input type="radio" name="tipo-pessoa" value="fisica" checked>
                   Pessoa física
               </label>
-          </div>
+        </div>
 
-          <div class="radio">
-              <label>
+        <div class="radio">
+          <label>
                   <input type="radio" name="tipo-pessoa" value="juridica">
                   Pessoa jurídica
               </label>
-          </div>
-      </div><!--
+        </div>
+      </div>
+      <!--
 
       --><select class="contato-select form-control" name="tipo-solicitacao">
           <option value="" disabled selected>Tipo de solicitação</option>
@@ -215,10 +238,8 @@
   </section>
   <footer>
     <address>
-        <strong>TopCasaFina Arquitetura</strong><br>
-        Rua Vergueiro, 3185, Vila Mariana<br>
-        São Paulo, SP<br>
-        Tel: (11) 5571-2751 ou 5083-3884<br>
+      <strong>TopCasaFina Arquitetura</strong><br> Rua Vergueiro, 3185, Vila Mariana<br> São Paulo, SP<br> Tel: (11) 5571-2751
+      ou 5083-3884<br>
     </address>
     <address>
       <a href="mailto:#">Email: contato.topcasafina@alura.com.br</a>
